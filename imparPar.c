@@ -1,7 +1,7 @@
 /*  Name: imparPar.c  
     Author: Nicolas de Sousa  
     Date: 25/08/26
-    Description: programa para verificar se é impar os par 
+    Description: programa para verificar se é impar ou par 
 */  
 // seção de importação 
  # include <stdio.h>  
