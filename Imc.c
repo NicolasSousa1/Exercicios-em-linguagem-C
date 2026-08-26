@@ -1,7 +1,7 @@
 /*
     Nicolas de Sousa
     25/08/2026
-     Algoritmo para calcular o IMC de uma pessoa
+    Algoritmo para calcular o IMC de uma pessoa
 */
 
 //seção de importação
