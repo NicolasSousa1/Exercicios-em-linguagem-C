@@ -9,7 +9,7 @@ int carregarVetor();
 
 int calcularMedia(int *);
 
-void exibirMediaArredondada(int);
+void exibirMediaArredondada(short int);
 
 main(){
 
@@ -22,7 +22,7 @@ int carregarVetor(){
 
     int vetor[10];
 
-    for(int i = 0; i < 10; i++){
+    for(short int i = 0; i < 10; i++){
 
         printf("Digite o numero da posicao %d: ", i+1);
         scanf("%d", &vetor[i]);
@@ -34,7 +34,7 @@ int carregarVetor(){
 }
 
 int calcularMedia(int *vetor){
-    int media = 0;
+    short int media = 0;
     for(int i = 0; i < 10; i++){
         media += vetor[i];
     }
@@ -43,6 +43,6 @@ int calcularMedia(int *vetor){
     return media;
 }
 
-void exibirMediaArredondada(int media){
+void exibirMediaArredondada(short int media){
     printf("A media arredondada e: %d", media);
 }
