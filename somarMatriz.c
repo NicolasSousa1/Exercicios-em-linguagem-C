@@ -8,17 +8,41 @@
 
 #include <stdio.h>
 
+void lerMatriz();
+
 void somarMatrizes(int [][3], int [][3]);
 
 void exibirMatrizes(int [][3], int [][3], int[][3]);
 
 main(){
 	
-	int matA[3][3] = {{3, 6, 2}, {1, 4, 9}, {5, 6, 7}};
-	int matB[3][3] = {{2, 1, 9}, {5, 3, 7}, {8, 2, 6}};
+    lerMatriz();
 	
-	somarMatrizes(matA, matB);
-	
+}
+
+void lerMatriz(){
+
+    
+    int matA[3][3];
+    int matB[3][3];
+
+    printf("Digite os valores da primeira matriz 3x3: \n");
+    for(int i =0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+            printf("Digite o valor da %d linha coluna %d: ", i, j);
+            scanf("%d", &matA[i][j]);
+        }
+    }
+
+    printf("Digite os valores da segunda matriz 3x3: \n");
+    for(int i =0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+            printf("Digite o valor da %d linha coluna %d: ", i, j);
+            scanf("%d", &matB[i][j]);
+        }
+    }
+
+    somarMatrizes(matA, matB);
 }
 
 void somarMatrizes(int MA[][3], int MB[][3]){
