@@ -6,7 +6,7 @@
 
 #include <stdio.h>
 
-void determinarMaiorConjunto(int mat[][5]);
+void determinarMaiorConjunto(int [][5]);
 
 int main(){
 
